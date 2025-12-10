@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <title>Tienda de muebles</title>
+  </head>
+  <body>
+    <header class="flex justify-center m-8 align-middle">
+      <h1 class="text-5xl">
+        Tienda de <span class="text-[#037BC0]">Muebles</span>
+      </h1>
+    </header>
+    <!-- navbar section -->
+    <section id="inicio" class="flex justify-center bg-cyan-300">
+      <nav class="flex justify-between w-[500px] h-12">
+        <a
+          href="#inicio"
+          class="relative self-center text-xl transition-colors duration-750 hover:text-white font-[Relaway] hover:border-b-2 hover:border-white"
+          >Inicio</a
+        >
+        <a
+          href="#nosotros"
+          class="relative self-center text-xl transition-colors duration-750 hover:text-white font-[Relaway]"
+          >Nosotros</a
+        >
+        <a
+          href="#tienda"
+          class="relative self-center text-xl transition-colors duration-750 hover:text-white font-[Relaway]"
+          >Tienda</a
+        >
+        <a
+          href="#blog"
+          class="relative self-center text-xl transition-colors duration-750 hover:text-white font-[Relaway]"
+          >Blog</a
+        >
+        <a
+          href="#galeria"
+          class="relative self-center text-xl transition-colors duration-750 hover:text-white font-[Relaway]"
+          >Galeria</a
+        >
+        <a
+          href="#contacto"
+          class="relative self-center text-xl transition-colors duration-750 hover:text-white font-[Relaway]"
+          >Contacto</a
+        >
+      </nav>
+    </section>
+    <!-- hero section -->
+    <section id="hero" class="">
+      <div class="flex w-full h-[550px] justify-center bg-black">
+        <img
+          src="./src/img/hero.jpg"
+          alt="img"
+          class="object-cover object-bottom w-full h-full opacity-40"
+        />
+        <div
+          class="absolute self-center text-4xl font-semibold text-white font-[Raleway]"
+        >
+          La mejor tienda en línea
+        </div>
+      </div>
+    </section>
+    <section id="productos">
+      <div class="flex justify-center m-10">
+        <h2 class="self-center text-3xl font-semibold">Nuestros productos</h2>
+      </div>
+      <div class="flex flex-row justify-center">
+        <div class="mr-2.5 h-[300px] w-[500px] object-center">
+          <img class="w-full h-full" src="./src/img/producto1.jpg" alt="" />
+        </div>
+        <div
+          class="flex h-[300px] w-[500px] bg-[#037BC0] justify-center items-center flex-col p-10"
+        >
+          <h3 class="mb-4 text-2xl text-white">Producto 1</h3>
+          <p class="mb-4 text-center text-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
+            ipsum doloribus.
+          </p>
+          <span class="mb-4 text-lg font-semibold text-white">$12.000.00</span>
+          <button
+            class="text-white border-2 rounded-3xl p-2.5 bg-green-400 transition-all duration-700 hover:bg-transparent hover:border-green-400"
+          >
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
