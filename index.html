@@ -17,46 +17,114 @@
     <title>Tienda de muebles</title>
   </head>
   <body>
-    <header class="flex justify-center m-8 align-middle">
-      <h1 class="text-5xl">
-        Tienda de <span class="text-[#037BC0]">Muebles</span>
-      </h1>
+    <header>
+      <div class="flex justify-center m-8 align-middle">
+        <h1 class="text-3xl md:text-5xl">
+          Tienda de <span class="text-[#037BC0]">Muebles</span>
+        </h1>
+      </div>
+      <!-- navbar section -->
+      <section class="justify-center hidden md:flex bg-cyan-400">
+        <nav class="flex justify-between w-[500px] h-12">
+          <a
+            href="#inicio"
+            class="relative self-center text-xl duration-750 hover:text-white font-[Relaway] transition-colors before:content[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-0.5 before:bg-white before:transition-all before:duration-500 hover:before:w-full active:before:w-full"
+            >Inicio</a
+          >
+          <a
+            href="#nosotros"
+            class="relative self-center text-xl duration-750 hover:text-white font-[Relaway] transition-colors before:content[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-0.5 before:bg-white before:transition-all before:duration-500 hover:before:w-full active:before:w-full"
+            >Nosotros</a
+          >
+          <a
+            href="#tienda"
+            class="relative self-center text-xl duration-750 hover:text-white font-[Relaway] transition-colors before:content[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-0.5 before:bg-white before:transition-all before:duration-500 hover:before:w-full active:before:w-full"
+            >Tienda</a
+          >
+          <a
+            href="#blog"
+            class="relative self-center text-xl duration-750 hover:text-white font-[Relaway] transition-colors before:content[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-0.5 before:bg-white before:transition-all before:duration-500 hover:before:w-full active:before:w-full"
+            >Blog</a
+          >
+          <a
+            href="#galeria"
+            class="relative self-center text-xl duration-750 hover:text-white font-[Relaway] transition-colors before:content[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-0.5 before:bg-white before:transition-all before:duration-500 hover:before:w-full active:before:w-full"
+            >Galeria</a
+          >
+          <a
+            href="#contacto"
+            class="relative self-center text-xl duration-750 hover:text-white font-[Relaway] transition-colors before:content[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-0.5 before:bg-white before:transition-all before:duration-500 hover:before:w-full active:before:w-full"
+            >Contacto</a
+          >
+        </nav>
+      </section>
+      <div class="flex justify-end m-2 md:hidden">
+        <button
+          onclick="abrirMenu()"
+          class="flex flex-col justify-center h-6 gap-1 bg-transparent border-none item-center btn-abrir-js"
+        >
+          <span class="h-0.5 w-6 bg-black"></span>
+          <span class="h-0.5 w-6 bg-black"></span>
+          <span class="h-0.5 w-6 bg-black"></span>
+        </button>
+      </div>
     </header>
-    <!-- navbar section -->
-    <section id="inicio" class="flex justify-center bg-cyan-300">
-      <nav class="flex justify-between w-[500px] h-12">
-        <a
-          href="#inicio"
-          class="relative self-center text-xl transition-colors duration-750 hover:text-white font-[Relaway] hover:border-b-2 hover:border-white"
-          >Inicio</a
-        >
-        <a
-          href="#nosotros"
-          class="relative self-center text-xl transition-colors duration-750 hover:text-white font-[Relaway]"
-          >Nosotros</a
-        >
-        <a
-          href="#tienda"
-          class="relative self-center text-xl transition-colors duration-750 hover:text-white font-[Relaway]"
-          >Tienda</a
-        >
-        <a
-          href="#blog"
-          class="relative self-center text-xl transition-colors duration-750 hover:text-white font-[Relaway]"
-          >Blog</a
-        >
-        <a
-          href="#galeria"
-          class="relative self-center text-xl transition-colors duration-750 hover:text-white font-[Relaway]"
-          >Galeria</a
-        >
-        <a
-          href="#contacto"
-          class="relative self-center text-xl transition-colors duration-750 hover:text-white font-[Relaway]"
-          >Contacto</a
-        >
+    <!-- side menu section -->
+    <div
+      onclick="cerrarMenu()"
+      class="side-menu-overlay-js fixed inset-0 z-[100] bg-[#858386] transition-all duration-500 bg-opacity-0 invisible"
+    ></div>
+    <section
+      class="side-menu-js fixed w-[140px] top-0 left-full h-full z-[101] bg-white pb-10 transition-all duration-500 flex flex-col"
+    >
+      <nav class="overflow-y-auto">
+        <ul>
+          <li>
+            <a
+              class="font-medium text-cyan-400 uppercase font-[Saira] text-lg block pt-2 pl-2 pb-0.5 relative transition-colors duration-500 before:content-[''] before:absolute before:inset-0 before:-z-[1] before:bg-cyan-400 before:w-0 before:transition-all before:duration-500 hover:before:w-full active:before:w-full hover:text-white"
+              href="#inicio"
+              >inicio</a
+            >
+          </li>
+          <li>
+            <a
+              class="font-medium text-cyan-400 uppercase font-[Saira] text-lg block pl-2 pb-0.5 relative transition-colors duration-500 before:content-[''] before:absolute before:inset-0 before:-z-[1] before:bg-cyan-400 before:w-0 before:transition-all before:duration-500 hover:before:w-full active:before:w-full hover:text-white"
+              href="#nosotros"
+              >nosotros</a
+            >
+          </li>
+          <li>
+            <a
+              class="font-medium text-cyan-400 uppercase font-[Saira] text-lg block pl-2 pb-0.5 relative transition-colors duration-500 before:content-[''] before:absolute before:inset-0 before:-z-[1] before:bg-cyan-400 before:w-0 before:transition-all before:duration-500 hover:before:w-full active:before:w-full hover:text-white"
+              href="#tienda"
+              >tienda</a
+            >
+          </li>
+          <li>
+            <a
+              class="font-medium text-cyan-400 uppercase font-[Saira] text-lg block pl-2 pb-0.5 relative transition-colors duration-500 before:content-[''] before:absolute before:inset-0 before:-z-[1] before:bg-cyan-400 before:w-0 before:transition-all before:duration-500 hover:before:w-full active:before:w-full hover:text-white"
+              href="#blog"
+              >blog</a
+            >
+          </li>
+          <li>
+            <a
+              class="font-medium text-cyan-400 uppercase font-[Saira] text-lg block pl-2 pb-0.5 relative transition-colors duration-500 before:content-[''] before:absolute before:inset-0 before:-z-[1] before:bg-cyan-400 before:w-0 before:transition-all before:duration-500 hover:before:w-full active:before:w-full hover:text-white"
+              href="#galeria"
+              >galería</a
+            >
+          </li>
+          <li>
+            <a
+              class="font-medium text-cyan-400 uppercase font-[Saira] text-lg block pl-2 pb-0.5 relative transition-colors duration-500 before:content-[''] before:absolute before:inset-0 before:-z-[1] before:bg-cyan-400 before:w-0 before:transition-all before:duration-500 hover:before:w-full active:before:w-full hover:text-white"
+              href="#contacto"
+              >contacto</a
+            >
+          </li>
+        </ul>
       </nav>
     </section>
+
     <!-- hero section -->
     <section id="hero" class="">
       <div class="flex w-full h-[550px] justify-center bg-black">
@@ -76,26 +144,74 @@
       <div class="flex justify-center m-10">
         <h2 class="self-center text-3xl font-semibold">Nuestros productos</h2>
       </div>
-      <div class="flex flex-row justify-center">
-        <div class="mr-2.5 h-[300px] w-[500px] object-center">
-          <img class="w-full h-full" src="./src/img/producto1.jpg" alt="" />
-        </div>
-        <div
-          class="flex h-[300px] w-[500px] bg-[#037BC0] justify-center items-center flex-col p-10"
-        >
-          <h3 class="mb-4 text-2xl text-white">Producto 1</h3>
-          <p class="mb-4 text-center text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
-            ipsum doloribus.
-          </p>
-          <span class="mb-4 text-lg font-semibold text-white">$12.000.00</span>
-          <button
-            class="text-white border-2 rounded-3xl p-2.5 bg-green-400 transition-all duration-700 hover:bg-transparent hover:border-green-400"
+      <div class="flex flex-col gap-10">
+        <div class="flex flex-row justify-center gap-10">
+          <div class="h-[300px] w-[500px] object-center">
+            <img class="w-full h-full" src="./src/img/producto1.jpg" alt="" />
+          </div>
+          <div
+            class="flex h-[300px] w-[500px] bg-[#037BC0] justify-center items-center flex-col p-10"
           >
-            Agregar al carrito
-          </button>
+            <h3 class="mb-4 text-2xl text-white">Producto 1</h3>
+            <p class="mb-4 text-center text-white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Molestias, ipsum doloribus.
+            </p>
+            <span class="mb-4 text-lg font-semibold text-white"
+              >$12.000.00</span
+            >
+            <button
+              class="text-white border-2 rounded-3xl p-2.5 bg-green-400 transition-all duration-700 hover:bg-transparent hover:border-green-400"
+            ></button>
+          </div>
+        </div>
+        <div class="flex flex-row justify-center gap-10">
+          <div class="h-[300px] w-[500px] object-center">
+            <img class="w-full h-full" src="./src/img/producto2.jpg" alt="" />
+          </div>
+          <div
+            class="flex h-[300px] w-[500px] bg-[#037BC0] justify-center items-center flex-col p-10"
+          >
+            <h3 class="mb-4 text-2xl text-white">Producto 1</h3>
+            <p class="mb-4 text-center text-white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Molestias, ipsum doloribus.
+            </p>
+            <span class="mb-4 text-lg font-semibold text-white"
+              >$12.000.00</span
+            >
+            <button
+              class="text-white border-2 rounded-3xl p-2.5 bg-green-400 transition-all duration-700 hover:bg-transparent hover:border-green-400"
+            >
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+        <div class="flex flex-row justify-center gap-10">
+          <div class="h-[300px] w-[500px] object-center">
+            <img class="w-full h-full" src="./src/img/producto3.jpg" alt="" />
+          </div>
+          <div
+            class="flex h-[300px] w-[500px] bg-[#037BC0] justify-center items-center flex-col p-10"
+          >
+            <h3 class="mb-4 text-2xl text-white">Producto 1</h3>
+            <p class="mb-4 text-center text-white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Molestias, ipsum doloribus.
+            </p>
+            <span class="mb-4 text-lg font-semibold text-white"
+              >$12.000.00</span
+            >
+            <button
+              class="text-white border-2 rounded-3xl p-2.5 bg-green-400 transition-all duration-700 hover:bg-transparent hover:border-green-400"
+            >
+              Agregar al carrito
+            </button>
+          </div>
         </div>
       </div>
     </section>
+
+    <script src="./src/js/main.js"></script>
   </body>
 </html>
