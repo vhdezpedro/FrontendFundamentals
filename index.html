@@ -141,70 +141,152 @@
       </div>
     </section>
     <!-- products section -->
-    <section id="productos">
+    <section class="grid gap-y-2" id="productos">
       <div class="flex justify-center m-10">
         <h2 class="self-center text-3xl font-semibold">Nuestros productos</h2>
       </div>
-      <div class="flex flex-col gap-10">
-        <div class="flex flex-row justify-center gap-10">
-          <div class="h-[300px] w-[500px] object-center">
-            <img class="w-full h-full" src="./src/img/producto1.jpg" alt="" />
-          </div>
-          <div
-            class="flex h-[300px] w-[500px] bg-[#037BC0] justify-center items-center flex-col p-10"
-          >
-            <h3 class="mb-4 text-2xl text-white">Producto 1</h3>
-            <p class="mb-4 text-center text-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Molestias, ipsum doloribus.
-            </p>
-            <span class="mb-4 text-lg font-semibold text-white"
-              >$12.000.00</span
-            >
-            <button
-              class="text-white border-2 rounded-3xl p-2.5 bg-green-400 transition-all duration-700 hover:bg-transparent hover:border-green-400"
-            ></button>
-          </div>
+      <div class="grid mx-5 md:grid-cols-[60%_40%] md:gap-y-2 md:mx-20">
+        <div class="h-[250px] md:h-[300px] self-stretch">
+          <img
+            class="object-cover w-full h-full"
+            src="./src/img/producto1.jpg"
+            alt=""
+          />
         </div>
-        <div class="flex flex-row justify-center gap-10">
-          <div class="h-[300px] w-[500px] object-center">
-            <img class="w-full h-full" src="./src/img/producto2.jpg" alt="" />
+        <div
+          class="bg-[#037BC0] text-white p-2 justify-center flex items-center flex-col h-[250px] md:h-[300px] gap-2"
+        >
+          <h3 class="text-2xl font-medium">Producto 1</h3>
+          <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,
+            ipsum doloribus.
+          </p>
+          <span class="text-xl font-medium">$12.000.00</span>
+          <button
+            class="p-1.5 bg-transparent border-2 mt-9 rounded-[20px] border-green-400 transition-colors duration-500 hover:bg-green-400"
+          >
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+      <div class="grid mx-5 md:grid-cols-2 gap-y-2 md:gap-x-2 md:mx-20">
+        <div class="md:col-[1_/_2] md:row-[1_/_2]">
+          <div class="h-[250px] md:h-[300px] self-stretch">
+            <img
+              class="object-cover w-full h-full"
+              src="./src/img/producto2.jpg"
+              alt=""
+            />
           </div>
           <div
-            class="flex h-[300px] w-[500px] bg-[#037BC0] justify-center items-center flex-col p-10"
+            class="bg-[#037BC0] text-white p-2 justify-center flex items-center flex-col h-[250px] md:h-[300px] gap-2"
           >
-            <h3 class="mb-4 text-2xl text-white">Producto 1</h3>
-            <p class="mb-4 text-center text-white">
+            <h3 class="text-2xl font-medium">Producto 2</h3>
+            <p class="text-center">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Molestias, ipsum doloribus.
             </p>
-            <span class="mb-4 text-lg font-semibold text-white"
-              >$12.000.00</span
-            >
+            <span class="text-xl font-medium">$12.000.00</span>
             <button
-              class="text-white border-2 rounded-3xl p-2.5 bg-green-400 transition-all duration-700 hover:bg-transparent hover:border-green-400"
+              class="p-1.5 bg-transparent border-2 mt-9 rounded-[20px] border-green-400 transition-colors duration-500 hover:bg-green-400"
             >
               Agregar al carrito
             </button>
           </div>
         </div>
-        <div class="flex flex-row justify-center gap-10">
-          <div class="h-[300px] w-[500px] object-center">
-            <img class="w-full h-full" src="./src/img/producto3.jpg" alt="" />
+        <div class="md:col-[2_/_3] md:row-[1_/_2]">
+          <div class="h-[250px] md:h-[300px] self-stretch">
+            <img
+              class="object-cover w-full h-full"
+              src="./src/img/producto3.jpg"
+              alt=""
+            />
           </div>
           <div
-            class="flex h-[300px] w-[500px] bg-[#037BC0] justify-center items-center flex-col p-10"
+            class="bg-[#037BC0] text-white p-2 justify-center flex items-center flex-col h-[250px] md:h-[300px] gap-2"
           >
-            <h3 class="mb-4 text-2xl text-white">Producto 1</h3>
-            <p class="mb-4 text-center text-white">
+            <h3 class="text-2xl font-medium">Producto 3</h3>
+            <p class="text-center">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Molestias, ipsum doloribus.
             </p>
-            <span class="mb-4 text-lg font-semibold text-white"
-              >$12.000.00</span
-            >
+            <span class="text-xl font-medium">$12.000.00</span>
             <button
-              class="text-white border-2 rounded-3xl p-2.5 bg-green-400 transition-all duration-700 hover:bg-transparent hover:border-green-400"
+              class="p-1.5 bg-transparent border-2 mt-9 rounded-[20px] border-green-400 transition-colors duration-500 hover:bg-green-400"
+            >
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="grid mx-5 md:grid-cols-3 gap-y-2 md:gap-x-2 md:mx-20">
+        <div class="md:col-[1_/_2] md:row-[1_/_2]">
+          <div class="h-[250px] md:h-[300px] self-stretch">
+            <img
+              class="object-cover w-full h-full"
+              src="./src/img/producto4.jpg"
+              alt=""
+            />
+          </div>
+          <div
+            class="bg-[#037BC0] text-white p-2 justify-center flex items-center flex-col h-[250px] md:h-[300px] gap-2"
+          >
+            <h3 class="text-2xl font-medium">Producto 4</h3>
+            <p class="text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Molestias, ipsum doloribus.
+            </p>
+            <span class="text-xl font-medium">$12.000.00</span>
+            <button
+              class="p-1.5 bg-transparent border-2 mt-9 rounded-[20px] border-green-400 transition-colors duration-500 hover:bg-green-400"
+            >
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+        <div class="md:col-[2_/_3] md:row-[1_/_2]">
+          <div class="h-[250px] md:h-[300px] self-stretch">
+            <img
+              class="object-cover w-full h-full"
+              src="./src/img/producto5.jpg"
+              alt=""
+            />
+          </div>
+          <div
+            class="bg-[#037BC0] text-white p-2 justify-center flex items-center flex-col h-[250px] md:h-[300px] gap-2"
+          >
+            <h3 class="text-2xl font-medium">Producto 5</h3>
+            <p class="text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Molestias, ipsum doloribus.
+            </p>
+            <span class="text-xl font-medium">$12.000.00</span>
+            <button
+              class="p-1.5 bg-transparent border-2 mt-9 rounded-[20px] border-green-400 transition-colors duration-500 hover:bg-green-400"
+            >
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+        <div class="md:col-[3_/_4] md:row-[1_/_2]">
+          <div class="h-[250px] md:h-[300px] self-stretch">
+            <img
+              class="object-cover w-full h-full"
+              src="./src/img/producto6.jpg"
+              alt=""
+            />
+          </div>
+          <div
+            class="bg-[#037BC0] text-white p-2 justify-center flex items-center flex-col h-[250px] md:h-[300px] gap-2"
+          >
+            <h3 class="text-2xl font-medium">Producto 6</h3>
+            <p class="text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Molestias, ipsum doloribus.
+            </p>
+            <span class="text-xl font-medium">$12.000.00</span>
+            <button
+              class="p-1.5 bg-transparent border-2 mt-9 rounded-[20px] border-green-400 transition-colors duration-500 hover:bg-green-400"
             >
               Agregar al carrito
             </button>
